@@ -10,6 +10,7 @@ import { SelectedEmployeComponent } from './selected-employe/selected-employe.co
 import { AjoutEmployeComponent } from './ajout-employe/ajout-employe.component';
 import { ErrorComponent } from './error/error.component';
 import { EmpComponent } from './emp/emp.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EmpComponent } from './emp/emp.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

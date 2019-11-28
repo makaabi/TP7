@@ -17,7 +17,7 @@ import { Employe } from '../../Employe';
   <li class="list-group-item" *ngFor="let t of lesemployes">
   {{t.matricule}} {{t.nom}}
 
-  <a [routerLink]="[t.matricule]"><button class="btn btn-primary">Infos</button></a>
+  <a [routerLink]="['/employes-list',t.matricule]"><button class="btn btn-primary">Infos</button></a>
   </li>
 
   </ul>

@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
    <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" routerLink="presentation" routerLinkActive="gras">Presentation</a>
+      <a class="nav-link" [routerLink]="['/presentation']" routerLinkActive="gras">Presentation</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink="employes-list" routerLinkActive="gras">Liste Employé</a>
+      <a class="nav-link" [routerLink]="['/employes-list']" routerLinkActive="gras">Liste Employé</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink="ajout-employe" routerLinkActive="gras">Ajout Employé</a>
+      <a class="nav-link" [routerLink]="['/ajout-employe']" routerLinkActive="gras">Ajout Employé</a>
     </li>
   </ul>
 </nav>

@@ -22,10 +22,18 @@ export class EmployesService {
       return null;
 
     }
-    addEmploye()
-    {
+    public getLastMatricule():number 
+ {
+  
+    return this.lesEmployes[this.lesEmployes.length-1].matricule;
+   
+ }
 
-    }
+ public addEmploye(nom: string, poste:string,expert:boolean)
+ {
+    let obj:Employe=new Employe(this.getLastMatricule()+1,nom,poste,expert);
+    this.lesEmployes.push(obj); 
+ }
 
   constructor() { }
 }
